@@ -1,204 +1,230 @@
 @font-face {
-    font-family: 'iconitos';
+	font-family: "iconitos";
 	src: url("../fonts/iconitos/icomoon.eot?lmozq2");
-    src: url("assets/fonts/iconitos/icomoon.eot?lmozq2#iefix") format('embedded-opentype'), url("../fonts/iconitos/icomoon.ttf?lmozq2") format('truetype'), url("../fonts/iconitos/icomoon.woff?lmozq2") format('woff'), url("../fonts/iconitos/icomoon.svg?lmozq2#icomoon") format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
-
-body .buttons{
-	display : block;
-	margin-left: 1100px;
-	margin-top: -30px;
-}
-body .buttons .stop{
-	
+	src: url("assets/fonts/iconitos/icomoon.eot?lmozq2#iefix")
+		format("embedded-opentype"),
+	  url("../fonts/iconitos/icomoon.ttf?lmozq2") format("truetype"),
+	  url("../fonts/iconitos/icomoon.woff?lmozq2") format("woff"),
+	  url("../fonts/iconitos/icomoon.svg?lmozq2#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+  
+  body button{
+	background-color: #960271;
+	color: #f5a7d2;
+	font-weight: bold;
+  }
+  body .buttons {
+	display: inline-block;
+  }
+  body .buttons .stop {
 	width: 30px;
 	height: 30px;
 	background-color: #960271;
 	display: inline-block;
 	border: none;
 	border-radius: 5px;
-	
-	
-}
-
-
-
-body .buttons .stop .icon1{
-	font-family: 'iconitos';
-	color: #F5A7D2;
+  }
+  
+  body .buttons .stop .icon1 {
+	font-family: "iconitos";
+	color: #f5a7d2;
 	font-size: 18px;
-
-}
-
-
-
-body .buttons .stop .icon1:before{
+  }
+  
+  body .buttons .stop .icon1:before {
 	content: "\ea1d";
-}
-
-body .buttons .reset {
-    
+  }
+  
+  body .buttons .reset {
 	width: 30px;
 	height: 30px;
 	background-color: #960271;
 	display: inline-block;
 	border: none;
 	border-radius: 5px;
-	
-}
-
-body .buttons .reset .icon2{
-	font-family: 'iconitos';
-	color: #F5A7D2;
+  }
+  
+  body .buttons .reset .icon2 {
+	font-family: "iconitos";
+	color: #f5a7d2;
 	font-size: 18px;
-}
-
-body .buttons .reset .icon2:before{
+  }
+  
+  body .buttons .reset .icon2:before {
 	content: "\e901";
-}
-body .buttons .reset .icon2{
-	font-family: 'iconitos';
-	color: #F5A7D2;
+  }
+  body .buttons .reset .icon2 {
+	font-family: "iconitos";
+	color: #f5a7d2;
 	font-size: 18px;
-}
-
-p{margin: 0; font: 12px/150% Arial; text-align: center; color: #888;}
-p a{color: #888;}
-body{
-    background: #DAACC6;
-}
-
-body .clock{
+  }
+  
+  p {
+	margin: 0;
+	font: 12px/150% Arial;
+	text-align: center;
+	color: #888;
+  }
+  p a {
+	color: #888;
+  }
+  body {
+	background: #daacc6;
+  }
+  
+  .botones {
+	position: absolute;
+	top: 0;
+	right: 0;
+  }
+  
+  .relative {
+	position: relative;
+  }
+  
+  body .clock {
 	width: 217px;
 	height: 34px;
 	background-color: #960272;
 	text-align: center;
 	border-radius: 8px;
-	color: #DAACC6;
+	color: #daacc6;
 	font: 30px Arial;
 	font-weight: bold;
-	box-shadow : 1px 1px 1px #A58296;
-	margin-left: 1200px;
-	margin-bottom: -10px;
-}
-
-body .ganar{
+	box-shadow: 1px 1px 1px #a58296;
+	display: inline-block;
+	margin-left: 50px;
+  }
+  
+  body .ganar {
 	width: 457px;
 	height: 233px;
 	background: #960271;
 	text-align: center;
-	border: 2px solid  #C593DC;		
+	border: 2px solid #c593dc;
 	border-radius: 8px;
-	box-shadow: 3px 3px 10px #A58296;
+	box-shadow: 3px 3px 10px #a58296;
 	opacity: 0.9;
 	margin-top: -380px;
 	margin-right: -500px;
 	margin-left: 470px;
-
-}
-
-body .ganar h1{
+  }
+  
+  body .ganar h1 {
 	font: 60px/150% Arial;
-	color: #DAACC6;
+	color: #daacc6;
 	margin: 0;
-	padding: 0;	
+	padding: 0;
 	margin-top: 30px;
 	font-weight: bold;
 	margin-bottom: 30px;
-
-}
-
-body .ganar button{
-	background-color: #DAACC6;
-	border: 2px solid  #960271;
+  }
+  
+  body .ganar button {
+	background-color: #daacc6;
+	border: 2px solid #960271;
 	width: 200px;
 	height: 40px;
 	font-weight: bold;
 	font-size: 20px;
 	color: #960271;
 	border-radius: 7px;
-}
-
-body .ganar button:hover{
-	background-color: #A58296;
-	color: #DAACC6;
-}
-
-body  .gato img{
-    width: 300px;
-    height: 160px;
-    display: inline-block;
-    margin-left: 580px;
-    margin-bottom: -220px;
+  }
   
-}
-#options{text-align: center;}
-#options button{
+  body .ganar button:hover {
+	background-color: #a58296;
+	color: #daacc6;
+  }
+  
+  body .gato img {
+	width: 300px;
+	height: 160px;
+	display: inline-block;
+  }
+  
+  .gato {
+	position: absolute;
+	margin: 0;
+	left: 50%;
+	top: -65px;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }
+  
+  #options {
+	text-align: center;
+  }
+  #options button {
 	cursor: pointer;
-    border-radius: 8px;
-    border: 2px solid #F5A7D2;
-    box-shadow: 0px 2px px #A58296;
+	border-radius: 8px;
+	border: 2px solid #f5a7d2;
+	box-shadow: 0px 2px px #a58296;
 	background: #960272;
 	font-size: 20px;
-    color: #F7ADD6;
-    font-weight: bold;
-    width: 160px;
-    height: 40px;
-    margin-top: 40px;
-}
-#options button:hover{background: #960271;}
-
-#puzzle_fifteen{
+	color: #f7add6;
+	font-weight: bold;
+	width: 160px;
+	height: 40px;
+	margin-top: 40px;
+  }
+  #options button:hover {
+	background: #960271;
+  }
+  
+  #puzzle_fifteen {
 	margin-top: 50px;
 	position: relative;
 	width: 325px;
 	height: 325px;
 	margin: 0 auto;
 	margin-top: 200px;
-	border: 8px solid #F5A7D2;
+	border: 8px solid #f5a7d2;
 	border-radius: 4px;
-    box-shadow: 10px 8px 8px #A58296;
-}
-#puzzle_fifteen span{
+	box-shadow: 10px 8px 8px #a58296;
+  }
+  #puzzle_fifteen span {
 	position: absolute;
 	display: block;
 	width: 75px;
 	height: 75px;
 	border-radius: 10px;
 	margin-left: 3px;
-	box-shadow: #A58296 2px 0px 0px;
-	
-
-    
-}
-#puzzle_fifteen span.numero{
+	box-shadow: #a58296 2px 0px 0px;
+  }
+  #puzzle_fifteen span.numero {
 	cursor: pointer;
 	font: bold 36px/80px Arial;
 	text-align: center;
-	text-shadow: -1px -1px 0 rgba(0,0,0, 0.5);
-	color: #F7ADD6;
-}
-#puzzle_fifteen span.empty{
-	background: #960272; 
-	border: 2px solid #F5A7D2; 
-	font-family: 'iconitos';
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+	color: #f7add6;
+  }
+  #puzzle_fifteen span.empty {
+	background: #960272;
+	border: 2px solid #f5a7d2;
+	font-family: "iconitos";
 	font-size: 60px;
 	text-align: center;
-}
-
-#puzzle_fifteen span.empty:before{
-	color: #FEFE8A;
+  }
+  
+  #puzzle_fifteen span.empty:before {
+	color: #fefe8a;
 	content: "\e917";
 	margin-bottom: -10px;
-	
-}
-#puzzle_fifteen span.numero.light{background: #960272; border: 2px solid #F7ADD6; }
-#puzzle_fifteen span.numero.dark{background: #C593DC; border:  2px solid #F7ADD6;}
-
-#puzzle_fifteen.animations span{
+  }
+  #puzzle_fifteen span.numero.light {
+	background: #960272;
+	border: 2px solid #f7add6;
+  }
+  #puzzle_fifteen span.numero.dark {
+	background: #c593dc;
+	border: 2px solid #f7add6;
+  }
+  
+  #puzzle_fifteen.animations span {
 	-webkit-transition: 0.15s left, 0.15s top;
- 	transition: 0.15s left, 0.15s top;
-}
+	transition: 0.15s left, 0.15s top;
+  }
+  

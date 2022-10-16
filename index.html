@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  </head>
+  <body>
+    <div class="botones">
+      <div class="buttons">
+        <button class="stop" id="stop"><span class="icon1"></span></button>
+        <button class="reset" id="res"><span class="icon2"></span></button>
+      </div>
+      <div class="clock" id="timer">00:00</div>
+    </div>
+    <div class="relative">
+      <div class="gato">
+        <img src="assets/img/cat.png" alt="gato" />
+      </div>
+      <div id="puzzle_fifteen"></div>
+    </div>
+    <div id="options">
+      <button id="shuffle">Shuffle</button>
+    </div>
 
-</head>
-<body>
-    
-    <div class="clock" id="timer">
-        00:00
-    </div>
-    <div class="buttons">
-        <button class="stop" id="stop"> <span class="icon1"></span></button>
-        <button class="reset" id="res"> <span class="icon2"></span></button>
-    </div>
-    <div class="gato">
-        <img src="assets/img/cat.png" alt="gato">
-    </div>
-    <div id="puzzle_fifteen">
-       
-    </div>
-	<div id="options">	
-		<button id="shuffle">Shuffle</button>
-        
-	</div>
-    
     <div id="win" class="ganar">
-        <h1>¡Ganaste!</h1>
-        <button id="restart">Jugar de Nuevo</button>
-        
+      <h1>¡Ganaste!</h1>
+      <button id="restart">Jugar de Nuevo</button>
     </div>
-    <script src="assets/js/script.js"></script>
 
     <audio id="bgmusic" loop>
-        <source src="assets/sound/bgty.mp3" />
-      </audio>
+      <source src="./assets/sound/bgty.mp3" />
+    </audio>
 
-      
-        <button id="playbtn">Plasy</button>
-      
-</body>
+    <button id="playbtn">Play</button>
+  </body>
+  <script src="assets/js/script.js"></script>
 </html>
