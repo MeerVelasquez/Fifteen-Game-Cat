@@ -9,17 +9,16 @@ function pauseClock(){
 	clearTimeout(clock);
 }
 
-//unpause the timer
-function unpauseClock(){
-	clockon();
-}
-
 
 function playbgmusic() {
-    let audio = document.getElementById("bgmusic");
-    audio.play();
-    audio.volume = 0.05;
+	let audio = document.getElementById('bgmusic');
+	console.log(audio);
+	audio.play();
+	audio.volume = 0.05;
 }
+
+
+
 
 
 //resume the timer
@@ -40,17 +39,19 @@ function resumeClock(){
 		}, 1000) 
 	 }  
 
-	
+	 function unpauseClock(){
+		clockon();
+	}
 	var status = 1;
 	var puzzle_fifteen = document.getElementById('puzzle_fifteen');
 	// Estados iniciales del puzzle
 	function iniciar(){
 		clockon();
 		scramble();
-		playbgmusic();
 	}
     
 	solve();
+	
 	
 	puzzle_fifteen.addEventListener('click', function(e){
 		if(status == 1){
@@ -61,6 +62,7 @@ function resumeClock(){
 	document.getElementById('shuffle').addEventListener('click', iniciar);
 	document.getElementById('stop').addEventListener('click', pauseClock);  
 	document.getElementById('res').addEventListener('click', unpauseClock);
+	document.getElementById('playbtn').addEventListener('click', playbgmusic);
 	
 	
 	// resuelve el puzzle, pero solo es llamada al inicio.
@@ -115,11 +117,7 @@ function resumeClock(){
 		
 	}
    //On music
-	function playbgmusic() {
-		let audio = document.getElementById("bgmusic");
-		audio.play();
-		audio.volume = 0.05;
-	}
+	
 
 	function getCell(row, col){
 		return document.getElementById('celda-'+row+'-'+col);
@@ -173,7 +171,8 @@ function resumeClock(){
 		//if press button restart start again then stop clock
 		document.getElementById('restart').	addEventListener('click', function(){
 			win.style.display = "none";
-			iniciar();
+			scramble();
+			unpauseClock();
 		});
 	
 	}
